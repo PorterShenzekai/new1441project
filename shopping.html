@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to our School Shopping App</h1>
+        <img src="11.jpg" alt="Shopping App Header Image" class="header-image">
+        <nav>
+            <ul>
+                <li><a href="index.html" onclick="showPage('createUserPage')">Create User</a></li>
+                <li><a href="login.html" onclick="showPage('loginPage')">Login</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero-banner">  
+        <img src="A.jpg" alt="Shopping Page Hero Banner">  
+    </div>  
+    <h1>Shopping Cart Example</h1>
+
+<div class="product-container"> 
+    <div class="product-box" data-product-id="1" data-product-name="Product 1" data-product-price="100">
+    <h3>Product 1</h3>
+    <p>Introduce how to use CSS media queries and modern front-end frameworks such as Bootstrap, Foundation, etc. to create responsive website design. The course will cover screen size adaptation for different devices, layout adjustments, and ensuring consistency in user experience across browsers and devices.</p>
+    <p>Price: $100</p>
+    <input type="number" min="0" value="0" class="quantity-input">
+    <button class="add-to-cart-btn">Add to Cart</button>
+    </div>
+
+    <div class="product-box" data-product-id="2" data-product-name="Product 2" data-product-price="200">
+    <h3>Product 2</h3>
+    <p>Teach how to build and manage website content using popular CMS platforms such as WordPress, Cholla, and WordPress. The course will also cover how to customize CMS according to specific needs, including adding custom fields, plugins, and themes.</p>
+    <p>Price: $200</p>
+    <input type="number" min="0" value="0" class="quantity-input">
+    <button class="add-to-cart-btn">Add to Cart</button>
+    </div>
+    <div class="product-box" data-product-id="3" data-product-name="Product 3" data-product-price="300">
+    <h3>Product 3</h3>
+    <p>In depth explanation of the basic principles of SEO, including keyword research, website structure optimization, content optimization, external link construction, etc. The course will also cover how to use SEO tools to monitor and analyze website performance</p>
+    <p>Price: $300</p>
+    <input type="number" min="0" value="0" class="quantity-input">
+    <button class="add-to-cart-btn">Add to Cart</button>
+    </div>
+    <div class="product-box" data-product-id="4" data-product-name="Product 4" data-product-price="400">
+    <h3>Product 4</h3>
+    <p>Introduce common website security threats (such as SQL injection, cross site scripting attacks, etc.), and how to protect websites through secure coding practices, data encryption, firewall settings, and other measures. The course will also cover how to regularly backup and restore website data.</p>
+    <p>Price: $400</p>
+    <input type="number" min="0" value="0" class="quantity-input">
+    <button class="add-to-cart-btn">Add to Cart</button>
+    </div>
+    <div class="product-box" data-product-id="5" data-product-name="Product 5" data-product-price="500">
+    <h3>Product 5</h3>
+    <p>Explain the basic principles and processes of UX design, including user research, requirement analysis, prototype design, user testing, etc. The course will also cover how to optimize website navigation, layout, interaction, and other elements to enhance user experience.</p>
+    <p>Price: $200</p>
+    <input type="number" min="0" value="0" class="quantity-input">
+    <button class="add-to-cart-btn">Add to Cart</button>
+    </div>
+    </div>
+
+<!-- ... more product boxes ... -->
+
+<div id="cart">
+    <h2>Cart</h2>
+    <ul id="cart-items"></ul>
+    <p>Total: <span id="cart-total">0</span></p>
+    <button id="checkout">Checkout</button>
+    <button id="clear-cart">Clear Cart</button>
+</div>
+<script src="script.js"></script>
+    <footer>
+        <p>Student Details: Porter Shen Zekai</p>
+    </footer>
+</body>
+</html>

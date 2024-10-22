@@ -1,0 +1,177 @@
+/*porter*/
+body {  
+    font-family: Arial, sans-serif;  
+    margin: 0;  
+    padding: 0;  
+}  
+  
+header {  
+    background-color: #333;  
+    color: #fff;  
+    padding: 20px;  
+}  
+.product-container {  
+    /* Ensure that the container has sufficient width to accommodate all. product box elements */  
+    /* For example, if you have 5. product box elements, each with a width of 200px, plus a margin, you need a container width of at least 1000px+ */  
+    width: 100%; /* Alternatively, set a fixed width, such as 1100px (5. 200px. product boxes plus 4. 10px margins)*/
+
+    /*Optional: Add some styles, such as padding or margin */  
+    padding: 10px;  
+    text-align: center; /* Can help to center inline block level elements within the container */  
+    /* Use font size: 0; You can eliminate gaps between inline elements (if any), but remember to reset the font size in. product box */  
+    font-size: 0;  
+}  
+  
+.product-box {  
+    display: inline-block;  
+    width: 200px; /* Set the width of each product */  
+    height: auto; /* Automatically adjust height based on content */  
+    border: 1px solid #ccc;  
+    padding: 10px;  
+    margin: 10px; /* The left and right margins will affect the layout, ensuring sufficient space */  
+    text-align: center;  
+    /* Due to the font size: 0 set in the. product container, it is necessary to reset the font size here */  
+    font-size: 16px; /* Or any font size you want */  
+    vertical-align: top; /* Ensure top alignment of elements */  
+}
+  
+nav {  
+    background-color: #333;   
+    overflow: hidden;  
+}  
+
+ 
+nav ul {  
+    list-style-type: none;   
+    margin: 0;  
+    padding: 0;  
+}  
+ 
+nav ul li {  
+    float: left;  
+}  
+
+  
+nav ul li a {  
+    display: block;   
+    color: rgb(242, 132, 6);  
+    text-align: center;   
+    padding: 14px 16px;  
+    text-decoration: none;   
+}  
+  
+nav ul li a:hover,  
+nav ul li a.active {  
+    background-color: #bb7d7d;   
+}  
+  
+.page {  
+    display: none;  
+}  
+.page.active {  
+    display: block;  
+}  
+
+/* Modal box style */  
+.modal {  
+    display: none; /*Default Hide */  
+    position: fixed; /* Fixed positioning */  
+    z-index: 1; /* Placed on the top floor */  
+    left: 0;  
+    top: 0;  
+    width: 100%; /* Width occupies the entire screen */  
+    height: 100%; /* Height occupies the entire screen */  
+    overflow: auto; /* If necessary, add a scrollbar */  
+    background-color: rgb(241, 235, 235); /* Background color */  
+    background-color: rgba(248, 245, 245, 0.4); /*Black background with transparency */  
+}  
+
+/* Modal Content Style */  
+.modal-content {  
+    background-color: #fefefe;  
+    margin: 15% auto; /* 15% top margin, automatically centered horizontally */  
+    padding: 20px;  
+    border: 1px solid #888;  
+    width: 80%; /* width */  
+}  
+
+/* Close button style */  
+.close {  
+    color: #aaa;  
+    float: right;  
+    font-size: 28px;  
+    font-weight: bold;  
+}  
+
+.close:hover,  
+.close:focus {  
+    color: black;  
+    text-decoration: none;  
+    cursor: pointer;  
+}  
+
+.background-box {  
+    background-color: lightgray; /* The background color used here is light gray */  
+    padding: 20px; /* Inner margin, keeping the content at a certain distance from the edge of the background box */  
+    border: 1px solid lightskyblue; /* The border style is set here as a solid line with a width of 1 pixel, and the color is dark gray */  
+    border-radius: 8px; /* Rounded border, set to 8 pixels here */  
+    margin-top: 20px; /* Top margin, maintaining a certain distance from other elements */  
+    margin-bottom: 20px; /* Bottom margin, maintain a certain distance from other elements */  
+}  
+
+.hero-banner {  
+    /* Add style to Hero banner */  
+    width: 500px; /* Can be adjusted according to demand */  
+    height: 250px; /* Adjust based on image size and page layout */  
+    background-image: url('A.jpg'); /* If the image loading fails, a background image can be used as an alternative */  
+    background-size: cover; /* Ensure that the image covers the entire container*/  
+    background-position: center; /* Center Image  */  
+    text-align: center; /* If you need to add text above to center it */  
+    position: relative; /* If you need to add an overlay or text on top of it */  
+}  
+
+/* If using<img>tags, this style may be necessary to ensure that the image is displayed correctly */  
+.hero-banner img {  
+    width: 400px; /* Make the image width the same as the container width */  
+    height: auto; /* Maintain the scale of the image */  
+}  
+footer {  
+    background-color: #333;  
+    color: #fff;  
+    text-align: center;  
+    padding: 10px;  
+}
+.modal {  
+    display: none; /* Default Hide */  
+    position: fixed; /* Fixed positioning */  
+    left: 0;  
+    top: 0;  
+    width: 100px; /* The width occupies the entire screen */  
+    height: 100px; /* Height occupies the entire screen */  
+    overflow: auto; /* If necessary, add a scrollbar */  
+    background-color: rgb(0,0,0); /* background */  
+    background-color: rgba(0,0,0,0.4); /* Black background with transparency */  
+    z-index: 1; /* Modal box placed at the top level */  
+}  
+
+.modal-content {  
+    background-color: #fefefe;  
+    margin: 15% auto; /* 15% top blank and horizontal center */  
+    padding: 20px;  
+    border: 1px solid #888;  
+    width: 80%; /*wideth */  
+}  
+
+.close {  
+    color: #aaa;  
+    float: right;  
+    font-size: 28px;  
+    font-weight: bold;  
+}  
+
+.close:hover,  
+.close:focus {  
+    color: black;  
+    text-decoration: none;  
+    cursor: pointer;  
+}  

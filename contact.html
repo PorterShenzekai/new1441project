@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to our School Shopping App</h1>
+        <img src="11.jpg" alt="Shopping App Header Image" class="header-image">
+        <nav>
+            <ul>
+                <li><a href="index.html" onclick="showPage('createUserPage')">Create User</a></li>
+                <li><a href="login.html" onclick="showPage('loginPage')">Login</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2>contact Us</h2>  
+      
+    <form id="myForm">  
+        <!-- Name Field -->  
+        <label for="name">Name:</label>  
+        <input type="text" id="name" name="name" required><br><br>  
+      
+        <!-- Message Field -->  
+        <label for="message">Message:</label>  
+        <textarea id="message" name="message" required></textarea><br><br>  
+      
+        <!-- Example of Four Additional Fields -->  
+        <label for="email">Email:</label>  
+        <input type="email" id="email" name="email"><br><br>  
+      
+        <label for="age">Age:</label>  
+        <input type="number" id="age" name="age"><br><br>  
+      
+        <label for="gender">Gender:</label>  
+        <select id="gender" name="gender">  
+            <option value="male">Male</option>  
+            <option value="female">Female</option>  
+            <option value="other">Other</option>  
+        </select><br><br>  
+      
+        <label for="subscribe">Subscribe to Newsletter:</label>  
+        <input type="checkbox" id="subscribe" name="subscribe"><br><br>  
+      
+        <!-- Submit Button -->  
+        <input type="submit" value="Submit Form">  
+    </form> 
+          
+<script src="script.js"></script>
+  
+    <footer>  
+        <p>Student Details: Porter Shen Zekai</p>  
+    </footer>  
+</body>    
+</html>

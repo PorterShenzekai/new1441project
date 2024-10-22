@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to our School Shopping App</h1>
+        <img src="11.jpg" alt="Shopping App Header Image" class="header-image">
+        <nav>
+            <ul>
+                <li><a href="index.html" onclick="showPage('createUserPage')">Create User</a></li>
+                <li><a href="login.html" onclick="showPage('loginPage')">Login</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="page active" id="registerPage">  
+        <h1>Register Page</h1>
+        
+        <input type="text" id="username" placeholder="Username">  
+        <input type="password" id="password" placeholder="Password">  
+        <button onclick="createUser()">Register</button>  
+        <button id="deleteCredentialsButton">Delete Credentials</button> 
+    </div>  
+      
+    
+<script src="script.js"></script>
+    <footer>
+        <p>Student Details: Porter Shen Zekai</p>
+    </footer>
+</body>
+</html>
